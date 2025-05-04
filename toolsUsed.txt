@@ -1,0 +1,9 @@
+	1.	Pygame:
+	•	A popular Python library for making 2D games.
+	•	Handles rendering, input events, collision detection, sound, and more.
+	2.	Sys:
+	•	Used to handle system-specific parameters and functions, often for exiting the game.
+	3.	Random:
+	•	Likely used for randomizing ball directions or colors.
+	4.	OS:
+	•	Probably used for file path operations, ensuring compatibility across systems.
