@@ -66,7 +66,7 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-collision_sound = pygame.mixer.Sound(resource_path("collision_trim.mp3"))
+collision_sound = pygame.mixer.Sound(resource_path("collision.mp3"))
 
 
 # Game states
