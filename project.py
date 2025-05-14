@@ -201,7 +201,11 @@ def game_menu():
     # Title with retro effect
     draw_text("PING PONG", title_font, RED, WIDTH // 2 + 5, 105)
     draw_text("PING PONG", title_font, WHITE, WIDTH // 2, 100)
-    
+
+    # Draw W/S movement instruction at the bottom
+    move_text = font.render("Use W and S keys to move up and down", True, WHITE)
+    screen.blit(move_text, (WIDTH // 2 - move_text.get_width() // 2, HEIGHT - 50))
+
     # Points to win selector
     current_time = pygame.time.get_ticks()
     draw_text(f"POINTS TO WIN: {points_to_win}", font, WHITE, WIDTH // 2, 200)
