@@ -56,7 +56,18 @@ except:
     pygame.draw.rect(pl_img, BLUE, (0, 0, WIDTH, HEIGHT), 10)
     for y in range(30, HEIGHT, 40):
         pygame.draw.rect(pl_img, WHITE, (WIDTH//2 - 2, y, 4, 20))
-collision_sound = pygame.mixer.Sound("collision_trim.mp3")
+
+
+def resource_path(relative_path):
+    """ Get absolute path to resource (for PyInstaller compatibility). """
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+collision_sound = pygame.mixer.Sound(resource_path("collision_trim.mp3"))
+
 
 # Game states
 MENU = 0
