@@ -18,4 +18,5 @@
 |                                            Restart
 |                                            Quit
 |                                            
-This is my first game Made in python, with using pygame.............EnJOYyyyyyyyyyyy
+This is my first game Made in python, with using pygame.............EnJOYyyyyyyyyyyy DJONG.dmg for MacOS 
+
